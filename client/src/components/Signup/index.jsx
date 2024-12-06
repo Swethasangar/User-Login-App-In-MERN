@@ -22,7 +22,7 @@ const SignUp = () => {
       return;
     }
 
-    const url = `http://localhost:5000/signup`;
+    const url = `https://user-login-app-in-mern.onrender.com/signup`;
 
     try {
       const response = await axios.post(url, user);
