@@ -35,6 +35,7 @@ const connectDatabase = async () => {
     // await client.close();
   }
 };
+connectDatabase().catch(console.dir);
 
 // const users = [
 //   {
@@ -150,5 +151,4 @@ app.patch("/user/:id", async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server Started at ${PORT}...`);
-  connectDatabase().catch(console.dir);
 });
